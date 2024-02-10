@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf6f6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('assets/loginpage.jpg') center/cover no-repeat;
+        }  
+
+
+        #logo-container img {
+            width: 40%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+
+        .login-container {
+            background-color: #fbfffb;
+            border-radius: 48px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width:400px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .login-container h2 {
+            color: #090909;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fefcfc;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #4a5594;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div id="logo-container">
+        <img src="assets/logologin.png" alt="Logo">
+    </div>
+    <h2><b> MEMBERS LOGIN</b></h2>
+    <form class="login-form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" formaction="index.html">Login</button><br><br>
+            <a class="btn btn-primary" href="#" role="button">Sign Up</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
